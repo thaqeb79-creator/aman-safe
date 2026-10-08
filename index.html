@@ -1,1 +1,135 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>أمان | AMAN</title>
+<style>
+body{margin:0;font-family:Tahoma,Arial;background:#f1f5f9;color:#17243a;line-height:1.9}
+header,footer{background:#0b1730;color:white;text-align:center;padding:20px}
+header h1{color:#18b98a}
+.hero{background:linear-gradient(135deg,#0b1730,#20558a);color:white;text-align:center;padding:45px 15px}
+.hero h2{font-size:32px}
+main{max-width:850px;margin:25px auto;padding:0 15px}
+.card{background:white;margin:18px 0;padding:20px;border-radius:15px;box-shadow:0 3px 12px #0001}
+h2,h3{color:#174576}
+button{background:#18b98a;border:0;padding:12px 18px;border-radius:9px;font-size:16px;cursor:pointer}
+li{margin:8px 0}
+.warning{background:#fff1d5;padding:15px;border-radius:10px}
+a{color:#18b98a}
+</style>
+</head>
+<body>
+<header>
+<h1>🛡️ أمان AMAN</h1>
+<p>دليلك للسلامة والطوارئ</p>
+</header>
 
+<section class="hero">
+<h2>أمان يبدأ بالوعي</h2>
+<p>استعد للأزمات وتعلم كيف تحمي نفسك ومن حولك.</p>
+<a href="#fire"><button>ابدأ التعلم</button></a>
+</section>
+
+<main>
+<div class="warning">
+<strong>⚠️ تنبيه:</strong>
+في حالات الخطر الحقيقي، ابتعد إلى مكان آمن واتصل برقم الطوارئ المحلي، واتبع تعليمات الجهات المختصة.
+</div>
+
+<section class="card" id="fire">
+<h2>🔥 أولًا: السلامة من الحرائق</h2>
+<ul>
+<li>نبّه الموجودين واطلب المساعدة فورًا.</li>
+<li>اخرج من أقرب مخرج آمن ولا تستخدم المصعد.</li>
+<li>إذا وُجد دخان، ابقَ منخفضًا أثناء الخروج قدر الإمكان.</li>
+<li>لا تعد إلى المبنى لجلب أغراضك.</li>
+<li>إذا تعذر الخروج بأمان، ابتعد عن الدخان واتصل بالطوارئ وأخبرهم بمكانك.</li>
+<li>لا تحاول إطفاء حريق كبير بنفسك.</li>
+</ul>
+</section>
+
+<section class="card">
+<h2>🌍 ثانيًا: الزلازل</h2>
+<ul>
+<li>انخفض واحتمِ تحت طاولة متينة إن أمكن.</li>
+<li>غطِّ رأسك ورقبتك وابتعد عن النوافذ.</li>
+<li>لا تندفع إلى السلالم أثناء الاهتزاز.</li>
+<li>إذا كنت خارج المبنى، ابتعد عن المباني والأسلاك.</li>
+<li>بعد توقف الاهتزاز، اتبع تعليمات الجهات المختصة.</li>
+</ul>
+</section>
+
+<section class="card">
+<h2>⛈️ ثالثًا: السيول والعواصف</h2>
+<ul>
+<li>تابع التنبيهات الرسمية.</li>
+<li>ابتعد عن مجاري السيول والمياه المتحركة.</li>
+<li>لا تعبر طريقًا مغمورًا بالمياه.</li>
+<li>ابتعد عن الأسلاك الكهربائية المتساقطة.</li>
+</ul>
+</section>
+
+<section class="card">
+<h2>🎒 رابعًا: حقيبة الطوارئ</h2>
+<p>ضع علامة على الأشياء التي جهزتها:</p>
+<div id="list">
+<label><input type="checkbox"> مياه شرب</label><br>
+<label><input type="checkbox"> أطعمة محفوظة</label><br>
+<label><input type="checkbox"> مصباح يدوي وبطاريات</label><br>
+<label><input type="checkbox"> حقيبة إسعافات أولية</label><br>
+<label><input type="checkbox"> الأدوية الضرورية</label><br>
+<label><input type="checkbox"> نسخ من الوثائق المهمة</label><br>
+<label><input type="checkbox"> شاحن هاتف وبطارية متنقلة</label><br>
+</div>
+<p id="progress">جهزت 0 من 7 عناصر</p>
+</section>
+
+<section class="card">
+<h2>🏠 خامسًا: خطة الإخلاء</h2>
+<ul>
+<li>حدد مخارج آمنة من المنزل.</li>
+<li>اتفق مع الأسرة على مكان تجمع خارجي.</li>
+<li>ساعد الأطفال وكبار السن دون تعريض نفسك للخطر.</li>
+<li>لا تعد إلى مكان الخطر حتى تسمح الجهات المختصة بذلك.</li>
+</ul>
+</section>
+
+<section class="card" id="quiz">
+<h2>🧠 اختبر معلوماتك</h2>
+<p>ماذا تفعل إذا اندلع حريق في المبنى؟</p>
+<button onclick="answer(true)">أخرج من مسار آمن وأطلب المساعدة</button>
+<button onclick="answer(false)">أستخدم المصعد لجمع أغراضي</button>
+<p id="result"></p>
+</section>
+</main>
+
+<footer>
+<strong>أمان AMAN</strong>
+<p>الوعي اليوم قد يحمي حياتك غدًا.</p>
+<p>موقع توعوي تعليمي، ولا يغني عن إرشادات الدفاع المدني.</p>
+</footer>
+
+<script>
+const checks=document.querySelectorAll('#list input');
+function updateProgress(){
+let count=0;
+checks.forEach(c=>{if(c.checked)count++});
+document.getElementById('progress').textContent=
+'جهزت '+count+' من '+checks.length+' عناصر';
+}
+checks.forEach(c=>c.addEventListener('change',updateProgress));
+
+function answer(correct){
+const result=document.getElementById('result');
+if(correct){
+result.textContent='✅ إجابة صحيحة! السلامة أولًا.';
+result.style.color='green';
+}else{
+result.textContent='❌ غير صحيح. لا تستخدم المصعد ولا تخاطر بحياتك.';
+result.style.color='red';
+}
+}
+</script>
+</body>
+</html>
