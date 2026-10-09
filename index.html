@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>أمان | AMAN</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800;900&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={darkMode:'class'}</script>
+<style>
+*{font-family:'Cairo',sans-serif}
+:root{--bg:#f8fafc;--surface:#ffffff;--surface-2:#f1f5f9;--border:#e2e8f0;--text:#0f172a;--soft:#64748b;--muted:#94a3b8}
+.dark{--bg:#060c1e;--surface:#0d1936;--surface-2:#12214a;--border:#1d2e5a;--text:#eef2ff;--soft:#8aa0c8;--muted:#5a7096}
+body{background:var(--bg);color:var(--text)}
+.glass{backdrop-filter:blur(24px)}
+</style>
+</head>
+<body class="antialiased selection:bg-emerald-500 selection:text-white">
+<div class="fixed top-0 inset-x-0 h-[2px] z-[100]"><div id="scrollBar" class="h-full bg-gradient-to-l from-emerald-400 to-cyan-400 w-0"></div></div>
+
+<header class="sticky top-0 z-50 glass bg-white/70 dark:bg-[#0d1936]/70 border-b border-[var(--border)]">
+<div class="max-w-[880px] mx-auto px-6 h-[64px] flex items-center justify-between">
+<div class="flex items-center gap-3"><div class="w-9 h-9 rounded-xl bg-[#0b1730] dark:bg-white text-white dark:text-black grid place-items-center">🛡️</div><div class="font-black">أمان <span class="text-emerald-500">AMAN</span></div></div>
+<div class="flex items-center gap-2">
+<button onclick="document.documentElement.classList.toggle('dark')" class="w-9 h-9 rounded-full border border-[var(--border)] bg-[var(--surface)]">🌙</button>
+<a href="#fire" class="h-9 px-5 rounded-full bg-[#0b1730] dark:bg-white text-white dark:text-black text-[13px] font-bold grid place-items-center">ابدأ</a>
+</div>
+</div>
+</header>
+
+<section class="relative overflow-hidden">
+<div class="absolute inset-0 bg-[#0b1730]"></div>
+<div class="absolute inset-0 bg-gradient-to-br from-emerald-600/20 via-transparent to-cyan-600/20"></div>
+<div class="absolute -top-24 -left-24 w-[600px] h-[600px] bg-emerald-500/15 rounded-full blur-[100px]"></div>
+<div class="absolute -bottom-24 -right-24 w-[600px] h-[600px] bg-blue-500/15 rounded-full blur-[100px]"></div>
+<div class="relative max-w-[880px] mx-auto px-6 py-20 sm:py-28 text-center text-white">
+<div class="inline-flex px-3 py-1 rounded-full bg-white/10 border border-white/10 text-[11px] tracking-wide">دليلك للسلامة والطوارئ • 2026</div>
+<h1 class="mt-6 text-[42px] sm:text-[64px] font-[900] leading-[0.95] tracking-[-0.04em]">أمان يبدأ<br><span class="bg-gradient-to-l from-emerald-300 via-teal-200 to-cyan-200 bg-clip-text text-transparent">بالوعي</span></h1>
+<p class="mt-6 text-[17px] text-white/60 max-w-[520px] mx-auto leading-8">موقع توعوي مبسط يعلمك كيف تتصرف في الحرائق، الزلازل، والسيول. بدون تعقيد، خطوات واضحة تحميك.</p>
+<div class="mt-8 flex justify-center gap-3">
+<a href="#fire" class="h-[46px] px-8 rounded-full bg-white text-black font-bold text-[14px] flex items-center hover:scale-[1.02] transition">ابدأ التعلم</a>
+<a href="#bag" class="h-[46px] px-8 rounded-full bg-white/10 border border-white/15 text-white font-bold text-[14px] flex items-center hover:bg-white/15 transition">حقيبة الطوارئ</a>
+</div>
+<div class="mt-12 grid grid-cols-3 gap-3 max-w-[480px] mx-auto">
+<div class="rounded-2xl bg-white/5 border border-white/10 p-4 backdrop-blur"><div class="text-[20px]">🔥</div><div class="mt-2 text-[12px] font-bold text-white/70">الحرائق</div></div>
+<div class="rounded-2xl bg-white/5 border border-white/10 p-4 backdrop-blur"><div class="text-[20px]">🌍</div><div class="mt-2 text-[12px] font-bold text-white/70">الزلازل</div></div>
+<div class="rounded-2xl bg-white/5 border border-white/10 p-4 backdrop-blur"><div class="text-[20px]">⛈️</div><div class="mt-2 text-[12px] font-bold text-white/70">السيول</div></div>
+</div>
+</div>
+</section>
+
+<div class="max-w-[880px] mx-auto px-6 -mt-6 relative z-10">
+<div class="rounded-2xl bg-amber-50 dark:bg-amber-950/20 border border-amber-200/70 dark:border-amber-900/30 p-4 flex gap-3 text-[13px] leading-6 text-amber-900 dark:text-amber-200 shadow-xl shadow-amber-900/5"><span>⚠️</span><span><strong>تنبيه:</strong> في حالات الخطر الحقيقي، ابتعد إلى مكان آمن واتصل برقم الطوارئ المحلي، واتبع تعليمات الجهات المختصة.</span></div>
+</div>
+
+<main class="max-w-[880px] mx-auto px-6 py-10 space-y-6">
+
+<section id="fire" class="rounded-[28px] bg-[var(--surface)] border border-[var(--border)] p-7 sm:p-9 shadow-[0_20px_60px_rgba(0,0,0,.06)]">
+<div class="flex items-start justify-between gap-4">
+<div><div class="w-12 h-12 rounded-2xl bg-orange-500 text-white grid place-items-center text-[22px] shadow-[0_8px_20px_rgba(249,115,22,.3)]">🔥</div><h2 class="mt-4 text-[22px] font-black tracking-tight">السلامة من الحرائق</h2><p class="mt-2 text-[13px] text-[var(--soft)] leading-6">التصرف الصحيح في أول دقيقتين ينقذ الأرواح.</p></div>
+<div class="hidden sm:block text-[11px] px-3 py-1 rounded-full bg-orange-50 dark:bg-orange-950/30 border border-orange-200 dark:border-orange-900/40 text-orange-700 dark:text-orange-300">الأهم</div>
+</div>
+<div class="mt-7 grid gap-3">
+<div class="flex gap-3 p-3 rounded-xl bg-[var(--surface-2)] border border-[var(--border)] text-[14px] leading-7"><span class="text-emerald-500 mt-1">✓</span> نبّه الموجودين واطلب المساعدة فورًا.</div>
+<div class="flex gap-3 p-3 rounded-xl bg-[var(--surface-2)] border border-[var(--border)] text-[14px] leading-7"><span class="text-emerald-500 mt-1">✓</span> اخرج من أقرب مخرج آمن ولا تستخدم المصعد.</div>
+<div class="flex gap-3 p-3 rounded-xl bg-[var(--surface-2)] border border-[var(--border)] text-[14px] leading-7"><span class="text-emerald-500 mt-1">✓</span> إذا وُجد دخان، ابقَ منخفضًا أثناء الخروج قدر الإمكان.</div>
+<div class="flex gap-3 p-3 rounded-xl bg-[var(--surface-2)] border border-[var(--border)] text-[14px] leading-7"><span class="text-emerald-500 mt-1">✓</span> لا تعد إلى المبنى لجلب أغراضك، ولا تحاول إطفاء حريق كبير بنفسك.</div>
+<div class="flex gap-3 p-3 rounded-xl bg-[var(--surface-2)] border border-[var(--border)] text-[14px] leading-7"><span class="text-emerald-500 mt-1">✓</span> إذا تعذر الخروج، ابتعد عن الدخان واتصل بالطوارئ وأخبرهم بمكانك.</div>
+</div>
+</section>
+
+<section id="quakes" class="rounded-[28px] bg-[var(--surface)] border border-[var(--border)] p-7 sm:p-9 shadow-[0_20px_60px_rgba(0,0,0,.06)]">
+<div class="w-12 h-12 rounded-2xl bg-[#0b1730] dark:bg-white text-white dark:text-black grid place-items-center text-[22px]">🌍</div>
+<h2 class="mt-4 text-[22px] font-black">الزلازل</h2>
+<ul class="mt-6 space-y-3 text-[14px] text-[var(--soft)] leading-7 list-disc ps-5">
+<li>انخفض واحتمِ تحت طاولة متينة إن أمكن.</li>
+<li>غطِّ رأسك ورقبتك وابتعد عن النوافذ.</li>
+<li>لا تندفع إلى السلالم أثناء الاهتزاز.</li>
+<li>إذا كنت خارج المبنى، ابتعد عن المباني والأسلاك.</li>
+<li>بعد توقف الاهتزاز، اتبع تعليمات الجهات المختصة.</li>
+</ul>
+</section>
+
+<section id="floods" class="rounded-[28px] bg-[var(--surface)] border border-[var(--border)] p-7 sm:p-9 shadow-[0_20px_60px_rgba(0,0,0,.06)]">
+<div class="w-12 h-12 rounded-2xl bg-cyan-500 text-white grid place-items-center text-[22px] shadow-[0_8px_20px_rgba(6,182,212,.3)]">⛈️</div>
+<h2 class="mt-4 text-[22px] font-black">السيول والعواصف</h2>
+<div class="mt-6 grid sm:grid-cols-2 gap-3">
+<div class="rounded-xl border border-[var(--border)] bg-[var(--surface-2)] p-4 text-[13px] leading-6">تابع التنبيهات الرسمية أولاً بأول</div>
+<div class="rounded-xl border border-[var(--border)] bg-[var(--surface-2)] p-4 text-[13px] leading-6">ابتعد عن مجاري السيول والمياه المتحركة</div>
+<div class="rounded-xl border border-[var(--border)] bg-[var(--surface-2)] p-4 text-[13px] leading-6">لا تعبر طريقًا مغمورًا بالمياه</div>
+<div class="rounded-xl border border-[var(--border)] bg-[var(--surface-2)] p-4 text-[13px] leading-6">ابتعد عن الأسلاك الكهربائية المتساقطة</div>
+</div>
+</section>
+
+<section id="bag" class="rounded-[28px] bg-[#0b1730] dark:bg-[#0f1a33] text-white p-7 sm:p-9 shadow-[0_20px_60px_rgba(11,23,48,.3)] relative overflow-hidden">
+<div class="absolute -top-20 -left-20 w-80 h-80 bg-emerald-500/20 rounded-full blur-[60px]"></div>
+<div class="relative">
+<div class="flex items-center justify-between"><div class="flex items-center gap-3"><div class="w-12 h-12 rounded-2xl bg-white/10 border border-white/10 grid place-items-center">🎒</div><h2 class="text-[20px] font-black">حقيبة الطوارئ</h2></div><div class="px-3 py-1 rounded-full bg-white/10 border border-white/10 text-[12px]"><span id="progressText">0 / 7</span></div></div>
+<div class="mt-6 h-2 rounded-full bg-white/10 overflow-hidden"><div id="progressBar" class="h-full bg-emerald-400 w-0 transition-all duration-500"></div></div>
+<div id="list" class="mt-6 grid gap-3">
+<label class="group flex items-center gap-3 p-4 rounded-2xl bg-white/[0.06] border border-white/10 hover:bg-white/[0.09] cursor-pointer transition"><input type="checkbox" class="w-5 h-5 rounded-md accent-emerald-400"><span class="text-[14px] group-has-[input:checked]:line-through group-has-[input:checked]:opacity-60">مياه شرب</span></label>
+<label class="group flex items-center gap-3 p-4 rounded-2xl bg-white/[0.06] border border-white/10 hover:bg-white/[0.09] cursor-pointer transition"><input type="checkbox" class="w-5 h-5 rounded-md accent-emerald-400"><span class="text-[14px] group-has-[input:checked]:line-through group-has-[input:checked]:opacity-60">أطعمة محفوظة</span></label>
+<label class="group flex items-center gap-3 p-4 rounded-2xl bg-white/[0.06] border border-white/10 hover:bg-white/[0.09] cursor-pointer transition"><input type="checkbox" class="w-5 h-5 rounded-md accent-emerald-400"><span class="text-[14px] group-has-[input:checked]:line-through group-has-[input:checked]:opacity-60">مصباح يدوي وبطاريات</span></label>
+<label class="group flex items-center gap-3 p-4 rounded-2xl bg-white/[0.06] border border-white/10 hover:bg-white/[0.09] cursor-pointer transition"><input type="checkbox" class="w-5 h-5 rounded-md accent-emerald-400"><span class="text-[14px] group-has-[input:checked]:line-through group-has-[input:checked]:opacity-60">حقيبة إسعافات أولية</span></label>
+<label class="group flex items-center gap-3 p-4 rounded-2xl bg-white/[0.06] border border-white/10 hover:bg-white/[0.09] cursor-pointer transition"><input type="checkbox" class="w-5 h-5 rounded-md accent-emerald-400"><span class="text-[14px] group-has-[input:checked]:line-through group-has-[input:checked]:opacity-60">الأدوية الضرورية</span></label>
+<label class="group flex items-center gap-3 p-4 rounded-2xl bg-white/[0.06] border border-white/10 hover:bg-white/[0.09] cursor-pointer transition"><input type="checkbox" class="w-5 h-5 rounded-md accent-emerald-400"><span class="text-[14px] group-has-[input:checked]:line-through group-has-[input:checked]:opacity-60">نسخ من الوثائق المهمة</span></label>
+<label class="group flex items-center gap-3 p-4 rounded-2xl bg-white/[0.06] border border-white/10 hover:bg-white/[0.09] cursor-pointer transition"><input type="checkbox" class="w-5 h-5 rounded-md accent-emerald-400"><span class="text-[14px] group-has-[input:checked]:line-through group-has-[input:checked]:opacity-60">شاحن هاتف وبطارية متنقلة</span></label>
+</div>
+<p id="progress" class="mt-5 text-[13px] text-white/60 font-bold">جهزت 0 من 7 عناصر</p>
+</div>
+</section>
+
+<section id="evac" class="rounded-[28px] bg-[var(--surface)] border border-[var(--border)] p-7 sm:p-9">
+<div class="w-12 h-12 rounded-2xl bg-violet-500 text-white grid place-items-center">🏠</div>
+<h2 class="mt-4 text-[22px] font-black">خطة الإخلاء</h2>
+<div class="mt-6 grid gap-3 text-[14px] leading-7 text-[var(--soft)]">
+<div class="flex gap-3"><span class="w-7 h-7 rounded-full bg-violet-50 dark:bg-violet-950/40 border border-violet-200 dark:border-violet-900 grid place-items-center text-[12px] flex-shrink-0">1</span> حدد مخارج آمنة من المنزل.</div>
+<div class="flex gap-3"><span class="w-7 h-7 rounded-full bg-violet-50 dark:bg-violet-950/40 border border-violet-200 dark:border-violet-900 grid place-items-center text-[12px] flex-shrink-0">2</span> اتفق مع الأسرة على مكان تجمع خارجي.</div>
+<div class="flex gap-3"><span class="w-7 h-7 rounded-full bg-violet-50 dark:bg-violet-950/40 border border-violet-200 dark:border-violet-900 grid place-items-center text-[12px] flex-shrink-0">3</span> ساعد الأطفال وكبار السن دون تعريض نفسك للخطر.</div>
+<div class="flex gap-3"><span class="w-7 h-7 rounded-full bg-violet-50 dark:bg-violet-950/40 border border-violet-200 dark:border-violet-900 grid place-items-center text-[12px] flex-shrink-0">4</span> لا تعد إلى مكان الخطر حتى تسمح الجهات المختصة.</div>
+</div>
+</section>
+
+<section id="quiz" class="rounded-[28px] bg-[var(--surface)] border border-[var(--border)] p-7 sm:p-9">
+<div class="flex items-center gap-3"><div class="w-10 h-10 rounded-xl bg-[#0b1730] text-white grid place-items-center">🧠</div><h2 class="text-[18px] font-black">اختبر معلوماتك</h2></div>
+<p class="mt-5 text-[15px] font-bold">ماذا تفعل إذا اندلع حريق في المبنى؟</p>
+<div class="mt-5 grid gap-3">
+<button onclick="answer(true)" class="quiz-btn h-12 rounded-xl bg-[#0b1730] dark:bg-white text-white dark:text-black font-bold text-[14px] hover:opacity-90 transition">أخرج من مسار آمن وأطلب المساعدة</button>
+<button onclick="answer(false)" class="quiz-btn h-12 rounded-xl bg-[var(--surface-2)] border border-[var(--border)] font-bold text-[14px] hover:bg-[var(--border)] transition">أستخدم المصعد لجمع أغراضي</button>
+</div>
+<div id="resultBox" class="mt-4 hidden rounded-xl p-4 border text-[14px] font-medium"></div>
+</section>
+
+</main>
+
+<footer class="mt-10 border-t border-[var(--border)] py-8 text-center text-[12px] text-[var(--muted)]">© 2026 أمان AMAN — الوعي اليوم قد يحمي حياتك غدًا.</footer>
+
+<script>
+const checks=document.querySelectorAll('#list input');
+const progress=document.getElementById('progress');
+const progressText=document.getElementById('progressText');
+const progressBar=document.getElementById('progressBar');
+function updateProgress(){
+let c=0;checks.forEach(x=>{if(x.checked)c++});
+progress.textContent='جهزت '+c+' من '+checks.length+' عناصر';
+progressText.textContent=c+' / '+checks.length;
+progressBar.style.width=(c/checks.length*100)+'%';
+localStorage.setItem('aman-checks',JSON.stringify([...checks].map(x=>x.checked)));
+}
+checks.forEach(ch=>ch.addEventListener('change',updateProgress));
+const saved=JSON.parse(localStorage.getItem('aman-checks')||'[]');
+saved.forEach((v,i)=>{if(checks[i])checks[i].checked=v});
+updateProgress();
+function answer(ok){
+const box=document.getElementById('resultBox');
+box.classList.remove('hidden');
+if(ok){box.textContent='✅ إجابة صحيحة! السلامة أولًا.';box.className='mt-4 rounded-xl p-4 border text-[14px] font-bold bg-emerald-50 dark:bg-emerald-950/30 border-emerald-200 dark:border-emerald-900 text-emerald-700 dark:text-emerald-300';}
+else{box.textContent='❌ غير صحيح. لا تستخدم المصعد ولا تخاطر بحياتك.';box.className='mt-4 rounded-xl p-4 border text-[14px] font-bold bg-red-50 dark:bg-red-950/30 border-red-200 dark:border-red-900 text-red-700 dark:text-red-300';}
+}
+window.addEventListener('scroll',()=>{
+const t=document.documentElement.scrollHeight-window.innerHeight;
+const p=t>0?(window.scrollY/t)*100:0;
+document.getElementById('scrollBar').style.width=p+'%';
+},{passive:true});
+</script>
+</body>
+</html>
